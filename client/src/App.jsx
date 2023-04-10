@@ -1,12 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Loader,Servises,Navbar,Transaction,Footer,Welcom } from "./components"
+import './index.css'
 const App = () => {
   return (
-    <div>
-
+    <div className="min-h-screen ">
+        <div className='gradient-bg-welcome text-white'>
+              <Navbar/>
+              <Welcom/>
+        </div>
+        <Servises/>
+        <Transaction/>
+        <Footer/>
     </div>
   )
 }

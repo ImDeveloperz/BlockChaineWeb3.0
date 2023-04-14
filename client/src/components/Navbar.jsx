@@ -11,9 +11,9 @@ const NavbarItems=({item,classProps})=>{
   )
 }
 const Navbar = () => {
-  const [toggleMenu,setToggleMenu]=useState(false);
+  const [toggleMenu,setToggleMenu]=useState(false); //Hooks
   return (
-    <nav className='w-full flex md:justify-center justify-between p-4 items-center'>
+    <nav className='w-full flex  md:justify-center justify-between p-4 items-center'>
        <div className='md:flex-[0.5] flex-initial justify-center items-center'>
            <img src={logo} alt="logo"  className='w-32 cursor-pointer'/>
        </div>
@@ -21,7 +21,7 @@ const Navbar = () => {
            {["Market","Exchange","Tutorials","Wallets"].map((item,index) => (
               <NavbarItems key={item +index} item={item}/>
            ))}
-           <li className='bg-[#2952E3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546BD] ' >
+           <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546BD] ' >
             Login
            </li>
        </ul>
